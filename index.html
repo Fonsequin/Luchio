@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luchio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="imagenes/favicon.png">   
+</head>
+<body>
+
+  <div class="top-bar">ENVIO GRATIS EN PEDIDOS +$20,000 · DEVOLUCIONES GRATIS EN 45 DÍAS</div>
+
+  <header>
+    <div class="header-main">
+      <div class="logo">LUCHIO</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar vestidos, tops, zapatos...">
+        <button aria-label="Buscar">🔍</button>
+      </div>
+      <ul class="header-icons">
+        <li><span class="icon-glyph">👤</span>Cuenta</li>
+        <li><span class="icon-glyph">♡</span>Favoritos</li>
+        <li id="cart-btn" style="position:relative;">
+          <span class="icon-glyph">🛍</span>Carrito
+          <span class="cart-count" id="cart-count">0</span>
+        </li>
+      </ul>
+    </div>
+    <!--categorias-->
+    <nav class="categories">
+      <ul class="cat-list">
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Tendencias</a></li>
+        <li><a href="#">Mujer</a></li>
+        <li><a href="#">Hombre</a></li>
+        <li><a href="#">Niños</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Zapatos</a></li>
+        <li><a href="#">Hogar</a></li>
+        <li><a href="#">Moda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--banner o hero-->
+  <section class="hero">
+    <div class="hero-main">
+      <h1>Nueva coleccion de temporada</h1>
+      <p>Estilos nuevos cada semana. Descubri las prendas más buscadas</p>
+      <a href="#" class="shop-btn">COMPRAR AHORA</a>
+    </div>
+  </section>
+
+  <!--seccion de productos-->
+  <section class="section">
+    <div class="section-head">
+      <h2>Recomendado para ti</h2>
+      <a href="#" class="see-all">Ver todo </a>
+    </div>
+    <div class="product-grid">
+
+      <div class="card">
+        <div class="card-img">
+          <span class="badge">NUEVO</span>
+          <span class="wish">♡</span>
+          <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSU6cv3Gx3iPqdUQAYMZRSasNqZLsMt-IENvTesDmIgvvgbsTUTaW-BL2NrJyxEeWxu7PHdPaYknmyIBVg" alt="Vestido de verano">
+        </div>
+        <div class="card-info">
+          <div class="card-price">$29,999 <span class="old">$36,999</span></div>
+          <div class="card-desc">Vestido de Verano Estampado</div>
+          <div class="card-rating">★★★★☆ (238)</div>
+          <button class="add-cart-btn">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <span class="wish">♡</span>
+          <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQSLofT-bU1oLrgl8jTR3r4535QbNW0dDrizQ8ME-sUr52E4JPXeDQwm4wkfz-4f1hEnQbRmIQvM-l8FcE" alt="Camisa Casual">
+        </div>
+        <div class="card-info">
+          <div class="card-price">$24,850 <span class="old">$31,990</span></div>
+          <div class="card-desc">Camisa Manga Larga Casual</div>
+          <div class="card-rating">★★★★☆ (112)</div>
+          <button class="add-cart-btn">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="card" >
+        <div class="card-img">
+          <span class="badge">TENDENCIA</span>
+          <span class="wish">♡</span>
+          <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTf5qouZNrzg2y8juwyWfIcPECevEiNBQPv_G8EO4b4Xh4flh8U7hhE5uh0hv_FNNYRN7EBJq0CscgreXQ" alt="Campera Abrigo">
+        </div>
+        <div class="card-info">
+          <div class="card-price">$38,999 <span class="old">$45,000</span></div>
+          <div class="card-desc">Campera Parka con Capucha</div>
+          <div class="card-rating">★★★★★ (501)</div>
+          <button class="add-cart-btn">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <span class="wish">♡</span>
+          <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw3e5a0d58/products/NIIM9795-410/NIIM9795-410-2.JPG?sw=600&sh=600 alt="Remera Basica">
+        </div>
+        <div class="card-info">
+          <div class="card-precio-NO">$21,500</div>
+          <div class="card-desc">Buzo Jordan Hombre con capucha</div>
+          <div class="card-rating">★★★★☆ (89)</div>
+          <button class="add-cart-btn">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="card" data-name="Producto 5" data-price="1550">
+        <div class="card-img">
+          <span class="wish">♡</span>
+          <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw435f0949/products/PU528537-01/PU528537-01-2.JPG?sw=600&sh=600" alt="Campera">
+        </div>
+        <div class="card-info">
+          <div class="card-price">$47,550 <span class="old">$56,500</span></div>
+          <div class="card-desc">Campera estilo militar</div>
+          <div class="card-rating">★★★★☆ (176)</div>
+          <button class="add-cart-btn">Añadir al carrito</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h5>AYUDA</h5>
+        <ul>
+          <li>Estado del pedido</li>
+          <li>Envíos</li>
+          <li>Devoluciones</li>
+          <li>Contacto</li>
+        </ul>
+      </div>
+      <div>
+        <h5>SOBRE NOSOTROS</h5>
+        <ul>
+          <li>Quiénes somos</li>
+          <li>Trabaja con nosotros</li>
+          <li>Prensa</li>
+        </ul>
+      </div>
+      <div>
+        <h5>PROMOCIONES</h5>
+        <ul>
+          <li>Programa de puntos</li>
+          <li>Referir amigos</li>
+          <li>Tarjeta de regalo</li>
+        </ul>
+      </div>
+      <div>
+        <h5>SEGUINOS</h5>
+        <ul>
+          <li>Instagram</li>
+          <li>TikTok</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Ventana Emergente Estilo Temu / SHEIN -->
+  <div id="promo-modal" class="modal-bg">
+    <div class="modal-box">
+      <button id="close-modal" class="modal-x">&times;</button>
+      
+      <div class="modal-badge">OFERTA ESPECIAL</div>
+      <div class="modal-discount">20% OFF</div>
+      
+      <p class="modal-text">Por ser tu primera compra te otorgamos un bono de 20% de descuento</p>
+      
+      <button id="accept-modal" class="modal-btn">ACEPTAR</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
